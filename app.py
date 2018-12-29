@@ -4,5 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 
-def index():
-    return '<h1>SUCCESSFULLY DEPLOYED</h1>'
+def hello_world():
+    return 'SUCCESSFUL DEPLOYMENT'
+
+if __name__ == "__main__":
+    app.run(debug=True, port=33507)
